@@ -10,7 +10,7 @@ echo("<br>$id");
 
 $zapytanie_id = $polaczenie->query("SELECT nazwa FROM nazwa WHERE idn=$id limit 1");
 list($nazwa)=mysqli_fetch_array($zapytanie_id);
-
+// można kod z html wpisac do php tylko zamiast "" dać '' lub zrobić tak jak poniżej
 echo("
 <fieldset>
         <legend>Dodawanie do bazy danych</legend>
